@@ -1,0 +1,6 @@
+framework module DividedNaviController {
+  umbrella header "DividedNaviController-umbrella.h"
+
+  export *
+  module * { export * }
+}

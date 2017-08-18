@@ -1,0 +1,23 @@
+PODS:
+  - DividedNaviController (0.1.0)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+
+DEPENDENCIES:
+  - DividedNaviController (from `../`)
+  - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  DividedNaviController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DividedNaviController: dd08316dde75bf60592b2c17a8148693d8500429
+  FBSnapshotTestCase: '094f9f314decbabe373b87cc339bea235a63e07a'
+
+PODFILE CHECKSUM: 5725504c0ce0fb1f5ba951f0c5b55462ca8e92cf
+
+COCOAPODS: 1.2.1
