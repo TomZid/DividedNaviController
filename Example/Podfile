@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DividedNaviController_Example' do
+  pod 'DividedNaviController', :path => '../'
+
+  target 'DividedNaviController_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
