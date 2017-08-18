@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A015F721F47384300735675 /* TZViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A015F711F47384300735675 /* TZViewController.xib */; };
 		267FABB647079D46DB806E71 /* Pods_DividedNaviController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 382341E2B1AB15E9FFBEF6D9 /* Pods_DividedNaviController_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -22,7 +23,6 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		D1E0C1BEB3EE92CE1288F6EB /* Pods_DividedNaviController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF7290DB85590E2627A8748 /* Pods_DividedNaviController_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,11 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A015F711F47384300735675 /* TZViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TZViewController.xib; sourceTree = "<group>"; };
 		116319852479099D457E53F5 /* Pods-DividedNaviController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DividedNaviController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DividedNaviController_Tests/Pods-DividedNaviController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		265E1CA562824C4D363F72B2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		344274925E4A55CF0903632D /* DividedNaviController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DividedNaviController.podspec; path = ../DividedNaviController.podspec; sourceTree = "<group>"; };
+		265E1CA562824C4D363F72B2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		344274925E4A55CF0903632D /* DividedNaviController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DividedNaviController.podspec; path = ../DividedNaviController.podspec; sourceTree = "<group>"; };
 		382341E2B1AB15E9FFBEF6D9 /* Pods_DividedNaviController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DividedNaviController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A32E5185EF1C6E220FDA05D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5A32E5185EF1C6E220FDA05D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* DividedNaviController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DividedNaviController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,7 +63,6 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A35A2DA7E6CB69A4AF45C0F6 /* Pods-DividedNaviController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DividedNaviController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DividedNaviController_Example/Pods-DividedNaviController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B4621289FE70671C4DBD1912 /* Pods-DividedNaviController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DividedNaviController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DividedNaviController_Tests/Pods-DividedNaviController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C0237CAA4E40EBF55E03312E /* Pods-DividedNaviController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DividedNaviController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DividedNaviController_Example/Pods-DividedNaviController_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,9 +134,9 @@
 			children = (
 				6003F59C195388D20070C39A /* TZAppDelegate.h */,
 				6003F59D195388D20070C39A /* TZAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* TZViewController.h */,
 				6003F5A6195388D20070C39A /* TZViewController.m */,
+				0A015F711F47384300735675 /* TZViewController.xib */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -279,9 +279,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				0A015F721F47384300735675 /* TZViewController.xib in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,11 +1,3 @@
-//
-//  TZViewController.m
-//  DividedNaviController
-//
-//  Created by TomZid on 08/18/2017.
-//  Copyright (c) 2017 TomZid. All rights reserved.
-//
-
 #import "TZViewController.h"
 
 @interface TZViewController ()
@@ -17,13 +9,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [self randomColor];
+    self.navigationController.navigationBar.barTintColor = [self randomColor];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (UIColor*)randomColor {
+    CGFloat red = arc4random() % 177 / 255.0, green = arc4random() % 177 / 255.0, blue = arc4random() % 177 / 255.0;
+    return [UIColor colorWithRed:red green:green blue:blue alpha:1];
+}
+
+- (IBAction)push:(id)sender {
+    TZViewController *vc = [[TZViewController alloc] initWithNibName:@"TZViewController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)pop:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end
