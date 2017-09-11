@@ -1,13 +1,10 @@
-//
-//  TZViewController.h
-//  DividedNaviController
-//
-//  Created by TomZid on 08/18/2017.
-//  Copyright (c) 2017 TomZid. All rights reserved.
-//
+/**
+ *  xib中设置TableView的HeaderView
+ *  http://blog.csdn.net/ideaspress/article/details/48804939
+ */
 
 @import UIKit;
 
-@interface TZViewController : UIViewController
+@interface TZViewController : UITableViewController
 
 @end
