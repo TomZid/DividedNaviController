@@ -6,16 +6,26 @@
 
 static CGFloat TZViewController_LeadingConstraint_Constant_original;
 static CGFloat TZViewController_TopConstraint_Constant_original;
-static UILabel *TZViewController_TitleLabel;
 
 @interface TZViewController ()
 {
+    UILabel *TZViewController_TitleLabel;
+    
     __weak IBOutlet NSLayoutConstraint *leadingConstraint;
     __weak IBOutlet UILabel *titleLabel;
 }
 @end
 
 @implementation TZViewController
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.tableView removeObserver:self forKeyPath:@"contentOffset"];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.tableView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionOld | NSKeyValueObservingOptionNew context:nil];
+}
 
 - (void)viewDidLoad
 {
@@ -38,8 +48,6 @@ static UILabel *TZViewController_TitleLabel;
             [self.navigationController.view insertSubview:TZViewController_TitleLabel aboveSubview:obj];
         }
     }];
-    
-    [self.tableView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionOld | NSKeyValueObservingOptionNew context:nil];
 }
 
 - (UIColor*)randomColor {

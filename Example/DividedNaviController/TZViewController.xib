@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -25,18 +26,33 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OJg-LH-Z0P">
-                        <rect key="frame" x="20" y="40.5" width="42" height="20.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SceneKit将内容实现为节点的分层树结构，也称为场景图。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OJg-LH-Z0P">
+                        <rect key="frame" x="20" y="25" width="175" height="50"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CK8-5j-V5F">
+                        <rect key="frame" x="245" y="35" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="PUn-oz-YsW"/>
+                            <constraint firstAttribute="width" secondItem="CK8-5j-V5F" secondAttribute="height" multiplier="1:1" id="bKl-Hw-cTV"/>
+                        </constraints>
+                        <state key="normal" image="settings"/>
+                        <state key="highlighted" image="settingsPressed"/>
+                        <connections>
+                            <action selector="push:" destination="-1" eventType="touchUpInside" id="gcb-q2-7gK"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstItem="OJg-LH-Z0P" firstAttribute="height" relation="lessThanOrEqual" secondItem="0Zu-lU-Mhh" secondAttribute="height" constant="-50" id="5Ym-cA-wOB"/>
                     <constraint firstItem="OJg-LH-Z0P" firstAttribute="leading" secondItem="0Zu-lU-Mhh" secondAttribute="leading" constant="20" id="HnA-Ww-904"/>
                     <constraint firstItem="OJg-LH-Z0P" firstAttribute="centerY" secondItem="0Zu-lU-Mhh" secondAttribute="centerY" id="R5h-uE-q0D"/>
+                    <constraint firstAttribute="trailing" secondItem="CK8-5j-V5F" secondAttribute="trailing" constant="100" id="TSo-kZ-spS"/>
+                    <constraint firstItem="CK8-5j-V5F" firstAttribute="centerY" secondItem="0Zu-lU-Mhh" secondAttribute="centerY" id="iOr-SG-DXo"/>
+                    <constraint firstItem="CK8-5j-V5F" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="OJg-LH-Z0P" secondAttribute="trailing" constant="50" id="odP-ff-JG9"/>
                 </constraints>
             </view>
             <connections>
@@ -46,4 +62,8 @@
             <point key="canvasLocation" x="125.5" y="169.5"/>
         </tableView>
     </objects>
+    <resources>
+        <image name="settings" width="41" height="48"/>
+        <image name="settingsPressed" width="41" height="48"/>
+    </resources>
 </document>
